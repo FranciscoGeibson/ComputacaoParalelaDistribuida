@@ -25,7 +25,7 @@ RUN wget https://raw.githubusercontent.com/nlohmann/json/develop/include/nlohman
 COPY . .
 
 # Comando para compilar o código C++ (assumindo que o arquivo é main.cpp)
-RUN g++ -o my_program main.cpp -std=c++11 -pthread
+RUN g++ -o my_program 4threads.cpp -std=c++11 -pthread
 
 # Comando para rodar o programa compilado
 CMD ["./my_program"]
